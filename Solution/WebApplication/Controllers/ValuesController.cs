@@ -10,13 +10,12 @@ using WebApplication.Modules;
 
 namespace WebApplication.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
         // GET api/Select
         [Route("api/Select")]
-        [HttpPost]
+        [HttpGet]
         public ActionResult<ArrayList> GetSelect([FromForm] Commons cm)
         {
             DataBase db = new DataBase();

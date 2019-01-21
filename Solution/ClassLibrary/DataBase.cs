@@ -21,7 +21,7 @@ namespace ClassLibrary
             try
             {
                 conn = new MySqlConnection();
-                string host = "127.0.0.1";
+                string host = "192.168.0.77";
                 string user = "root";
                 string password = "1234";
                 string db = "test";
