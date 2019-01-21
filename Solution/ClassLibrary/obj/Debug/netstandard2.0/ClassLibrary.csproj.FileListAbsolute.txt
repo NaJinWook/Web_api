@@ -1,0 +1,9 @@
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.deps.json
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.dll
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.csprojAssemblyReference.cache
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfoInputs.cache
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.AssemblyInfo.cs
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\bin\Debug\netstandard2.0\ClassLibrary.pdb
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.dll
+C:\Users\skwls\OneDrive\Desktop\WebAPI\Web_api\Solution\ClassLibrary\obj\Debug\netstandard2.0\ClassLibrary.pdb
