@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
+using WebApplication.Modules;
 
 namespace WebApplication.Controllers
 {
@@ -12,9 +14,10 @@ namespace WebApplication.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        // GET api/Select
+        [Route("api/Select")]
+        [HttpPost]
+        public ActionResult<ArrayList> GetSelect([FromForm] Commons cm)
         {
             DataBase db = new DataBase();
             MySqlConnection conn = db.GetConnetion();
@@ -26,32 +29,61 @@ namespace WebApplication.Controllers
             {
                 Console.WriteLine("Success!!");
             }
-            return new string[] { "value1", "value2" };
+            return CRUD.GetSelect();
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
+        // GET api/Insert
+        [Route("api/Insert")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<ArrayList> GetInsert([FromForm] Commons cm)
         {
+            DataBase db = new DataBase();
+            MySqlConnection conn = db.GetConnetion();
+            if (conn == null)
+            {
+                Console.WriteLine("Error!!");
+            }
+            else
+            {
+                Console.WriteLine("Success!!");
+            }
+            return CRUD.GetInsert(cm);
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        // GET api/Update
+        [Route("api/Update")]
+        [HttpPost]
+        public ActionResult<ArrayList> GetUpdate([FromForm] Commons cm)
         {
+            DataBase db = new DataBase();
+            MySqlConnection conn = db.GetConnetion();
+            if (conn == null)
+            {
+                Console.WriteLine("Error!!");
+            }
+            else
+            {
+                Console.WriteLine("Success!!");
+            }
+            return CRUD.GetUpdate(cm);
         }
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        // GET api/Delete
+        [Route("api/Delete")]
+        [HttpPost]
+        public ActionResult<ArrayList> GetDelete([FromForm] Commons cm)
         {
+            DataBase db = new DataBase();
+            MySqlConnection conn = db.GetConnetion();
+            if (conn == null)
+            {
+                Console.WriteLine("Error!!");
+            }
+            else
+            {
+                Console.WriteLine("Success!!");
+            }
+            return CRUD.GetDelete(cm);
         }
     }
 }
