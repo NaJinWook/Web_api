@@ -21,13 +21,6 @@ namespace ClassLibrary
             try
             {
                 conn = new MySqlConnection();
-                //string host = "192.168.3.121";
-                //string user = "root";
-                //string password = "1234";
-                //string db = "test";
-
-                //string strConnection = string.Format("server={0}; uid={1}; password={2}; database={3};", host, user, password, db);
-                //conn.ConnectionString = strConnection;
                 string path = "/public/DBInfo.json";
                 string result = new StreamReader(File.OpenRead(path)).ReadToEnd();
 

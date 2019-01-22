@@ -36,6 +36,7 @@ namespace WebApplication
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
         }
     }
 }
