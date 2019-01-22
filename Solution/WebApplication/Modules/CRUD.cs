@@ -21,7 +21,7 @@ namespace WebApplication.Modules
         public static ArrayList GetSelect()
         {
             DataBase db = new DataBase();
-            string sql = "select * from Notice;";
+            string sql = "select * from Notice where delYn = 'N';";
             ArrayList list = new ArrayList();
             MySqlDataReader sdr = db.Reader(sql);
             while (sdr.Read())
@@ -41,7 +41,7 @@ namespace WebApplication.Modules
         public static ArrayList GetInsert(Commons cm)
         {
             DataBase db = new DataBase();
-            string sql = string.Format("insert into Notice (nNo, nTitle, nContents) values ('{0}','{1}','{2}');", cm.nNo, cm.nTitle, cm.nContents);
+            string sql = string.Format("insert into Notice (nTitle, nContents) values ('{0}','{1}');", cm.nTitle, cm.nContents);
             if (db.NonQuery(sql))
             {
                 return GetSelect();
