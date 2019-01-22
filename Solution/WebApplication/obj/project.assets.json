@@ -4406,7 +4406,7 @@
   },
   "libraries": {
     "Google.Protobuf/3.5.1": {
-      "sha512": "f2k1VNaB9bfvEsvARzzEL1TZiIpL33KKK3JMH7UANlPlJVptuvsk4qpBZEnz0pORWZOdUHlVwMQuUzFqjJYCxA==",
+      "sha512": "j/gbpRZ68sgvdi/vXI39Cj/jWG4d1dtDqfWbkjC9dErNWu/dFcIlq1LIgLscea+llZ6nzm06wz/JGziOegAL7Q==",
       "type": "package",
       "path": "google.protobuf/3.5.1",
       "files": [
@@ -7026,7 +7026,7 @@
       ]
     },
     "MySql.Data/8.0.13": {
-      "sha512": "lj/0OSRrs4VwsGDSjU0w24fwLxIU1fwesohzg+UfoDfqiSAu+fykeFF9y+fCmip8ZlkHegYNdEAHdhLfmZbSIw==",
+      "sha512": "mXfjg2pOdzpyd4wkXZPKYcNluzV68ggAO/LPcT7iuzU5kDS7livUDR8IsKkarEhBmRxBy0XmBnUOkEWJvfOW9Q==",
       "type": "package",
       "path": "mysql.data/8.0.13",
       "files": [
@@ -7173,7 +7173,7 @@
       ]
     },
     "Newtonsoft.Json/12.0.1": {
-      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "type": "package",
       "path": "newtonsoft.json/12.0.1",
       "files": [
@@ -11975,23 +11975,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\skwls\\.nuget\\packages\\": {},
+    "C:\\Users\\gd7\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\skwls\\OneDrive\\Desktop\\WebAPI\\Web_api\\Solution\\WebApplication\\WebApplication.csproj",
+      "projectUniqueName": "C:\\Users\\gd7\\Desktop\\190122_Exam\\Web_api\\Solution\\WebApplication\\WebApplication.csproj",
       "projectName": "WebApplication",
-      "projectPath": "C:\\Users\\skwls\\OneDrive\\Desktop\\WebAPI\\Web_api\\Solution\\WebApplication\\WebApplication.csproj",
-      "packagesPath": "C:\\Users\\skwls\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\skwls\\OneDrive\\Desktop\\WebAPI\\Web_api\\Solution\\WebApplication\\obj\\",
+      "projectPath": "C:\\Users\\gd7\\Desktop\\190122_Exam\\Web_api\\Solution\\WebApplication\\WebApplication.csproj",
+      "packagesPath": "C:\\Users\\gd7\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gd7\\Desktop\\190122_Exam\\Web_api\\Solution\\WebApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\skwls\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gd7\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12004,8 +12004,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\skwls\\OneDrive\\Desktop\\WebAPI\\Web_api\\Solution\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\skwls\\OneDrive\\Desktop\\WebAPI\\Web_api\\Solution\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\gd7\\Desktop\\190122_Exam\\Web_api\\Solution\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\gd7\\Desktop\\190122_Exam\\Web_api\\Solution\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }

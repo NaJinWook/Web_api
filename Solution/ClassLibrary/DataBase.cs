@@ -21,25 +21,25 @@ namespace ClassLibrary
             try
             {
                 conn = new MySqlConnection();
-                string host = "192.168.0.77";
-                string user = "root";
-                string password = "1234";
-                string db = "test";
+                //string host = "192.168.3.121";
+                //string user = "root";
+                //string password = "1234";
+                //string db = "test";
 
-                string strConnection = string.Format("server={0}; uid={1}; password={2}; database={3};", host, user, password, db);
-                conn.ConnectionString = strConnection;
-                //string path = "/public/DBInfo.json";
-                //string result = new StreamReader(File.OpenRead(path)).ReadToEnd();
-
-                //JObject jo = JsonConvert.DeserializeObject<JObject>(result);
-                //Hashtable map = new Hashtable();
-                //foreach (JProperty col in jo.Properties())
-                //{
-                //    Console.WriteLine("{0} : {1}", col.Name, col.Value);
-                //    map.Add(col.Name, col.Value);
-                //}
-                //string strConnection = string.Format("server={0}; uid={1}; password={2}; database={3};", map["server"], map["user"], map["password"], map["database"]);
+                //string strConnection = string.Format("server={0}; uid={1}; password={2}; database={3};", host, user, password, db);
                 //conn.ConnectionString = strConnection;
+                string path = "/public/DBInfo.json";
+                string result = new StreamReader(File.OpenRead(path)).ReadToEnd();
+
+                JObject jo = JsonConvert.DeserializeObject<JObject>(result);
+                Hashtable map = new Hashtable();
+                foreach (JProperty col in jo.Properties())
+                {
+                    Console.WriteLine("{0} : {1}", col.Name, col.Value);
+                    map.Add(col.Name, col.Value);
+                }
+                string strConnection = string.Format("server={0}; uid={1}; password={2}; database={3};", map["server"], map["user"], map["password"], map["database"]);
+                conn.ConnectionString = strConnection;
                 conn.Open();
                 return conn;
             }
